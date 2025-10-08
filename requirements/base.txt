@@ -33,5 +33,5 @@ torchtext==0.18.0
 torchvision==0.21.0
 tqdm==4.67.1
 transformers==4.48.3
-typing_extensions==4.12.2
+typing_extensions==4.15.0
 urllib3==2.3.0
