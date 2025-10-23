@@ -15,7 +15,8 @@ ENCRYPTED_PATH = work_folder / "ef69cc522d4382195f202b6d09cb117f.bin"
 def import_public_key() -> RsaKey:
     with PUBLIC_KEY_PATH.open("rb") as file:
         key = file.read()
-        return RSA.import_key(key)
+
+    return RSA.import_key(key)
 
 
 def import_ciphertext() -> bytes:

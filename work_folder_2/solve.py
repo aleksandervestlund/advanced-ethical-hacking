@@ -1,6 +1,5 @@
 from pathlib import Path
 
-import mpmath
 from Crypto.Cipher import PKCS1_OAEP
 from Crypto.Cipher.PKCS1_OAEP import PKCS1OAEP_Cipher
 from Crypto.PublicKey import RSA
@@ -11,10 +10,10 @@ from mpmath import mp
 mp.prec = 100_000
 
 a_bits = 6
-aa: int = mpmath.power(2, a_bits)
-bb: int = mpmath.floor(-mpmath.power(2, 115.4 * a_bits))
-cc: int = mpmath.power(2, 20 * a_bits)
-dd: int = mpmath.power(2, 30 * a_bits)
+aa: int = mp.power(2, a_bits)
+bb: int = mp.floor(-mp.power(2, 115.4 * a_bits))
+cc: int = mp.power(2, 20 * a_bits)
+dd: int = mp.power(2, 30 * a_bits)
 upper_bits_limit = 1_024
 
 work_folder_2 = Path(__file__).parent.resolve()
@@ -35,7 +34,8 @@ ENCRYPTED_PATHS = [
 def import_public_key(filepath: Path) -> RsaKey:
     with filepath.open("rb") as file:
         key = file.read()
-        return RSA.import_key(key)
+
+    return RSA.import_key(key)
 
 
 def import_ciphertext(filepath: Path) -> bytes:

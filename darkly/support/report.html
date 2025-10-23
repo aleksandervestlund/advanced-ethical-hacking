@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+ <title>Nikto Report</title>
+ <style type="text/css">
+  .dataTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 11pt; 
+   font-weight: normal; 
+   color: #000066;
+   background: #EEEEEE;
+   border: thin solid black;
+   width: 95%;
+  }
+  .headerTable
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 15pt; 
+   font-weight: normal; 
+   color: white;
+   background: #000066;
+   border: thin solid black;
+   width: 300px;
+  }
+  .column-head
+  {
+   width: 15em;
+   font-weight:bold;
+   vertical-align: top;
+  }
+  .copyright
+  {
+   font-family: tahoma, sans-serif;
+   font-size: 10pt;
+   font-weight: normal;
+   font-style: italic;
+   color: black;
+  }
+  body
+  {
+   background: white;
+  }
+ </style>
+</head>
+<body>
+<div>
+<a name="1"></a>
+<table class="headerTable">
+ <tr>
+   <td>10.100.52.65 / 10.100.52.65 port 20930</td>
+ </tr>
+</table>
+<table class="dataTable">
+ <tr>
+   <td class="column-head">Target IP</td>
+   <td>10.100.52.65</td>
+ </tr>
+ <tr>
+   <td class="column-head">Target hostname</td>
+   <td>10.100.52.65</td>
+ </tr>
+  <tr>
+   <td class="column-head">Target Port</td>
+   <td>20930</td>
+ </tr>
+  <tr>
+   <td class="column-head">HTTP Server</td>
+   <td>nginx/1.8.0</td>
+ </tr>
+ <tr>
+   <td class="column-head">Site Link (Name)</td>
+   <td><a href="http://10.100.52.65:20930/">http://10.100.52.65:20930/</a></td>
+ </tr>
+ <tr>
+   <td class="column-head">Site Link (IP)</td>
+   <td><a href="http://10.100.52.65:20930/">http://10.100.52.65:20930/</a></td>
+ </tr>
+ </table>
+</div>
+<p></p>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: Retrieved x-powered-by header: PHP/5.3.10-1ubuntu3.19.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://10.100.52.65:20930/">http://10.100.52.65:20930/</a><br>
+      <a href="http://10.100.52.65:20930/">http://10.100.52.65:20930/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: The anti-clickjacking X-Frame-Options header is not present.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://10.100.52.65:20930/">http://10.100.52.65:20930/</a><br>
+      <a href="http://10.100.52.65:20930/">http://10.100.52.65:20930/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options'>https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: The X-Content-Type-Options header is not set. This could allow the user agent to render the content of the site in a different fashion to the MIME type.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://10.100.52.65:20930/">http://10.100.52.65:20930/</a><br>
+      <a href="http://10.100.52.65:20930/">http://10.100.52.65:20930/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/'>https://www.netsparker.com/web-vulnerability-scanner/vulnerabilities/missing-content-type-header/</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/: Cookie I_am_Satoshi_block_574938 created without the httponly flag.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://10.100.52.65:20930/">http://10.100.52.65:20930/</a><br>
+      <a href="http://10.100.52.65:20930/">http://10.100.52.65:20930/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies'>https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/whatever/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/whatever/: Directory indexing found.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://10.100.52.65:20930/whatever/">http://10.100.52.65:20930/whatever/</a><br>
+      <a href="http://10.100.52.65:20930/whatever/">http://10.100.52.65:20930/whatever/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/whatever/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: Entry '/whatever/' is returned a non-forbidden or redirect HTTP code (200).</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://10.100.52.65:20930/whatever/">http://10.100.52.65:20930/whatever/</a><br>
+      <a href="http://10.100.52.65:20930/whatever/">http://10.100.52.65:20930/whatever/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://portswigger.net/kb/issues/00600600_robots-txt-file'>https://portswigger.net/kb/issues/00600600_robots-txt-file</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/robots.txt</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/robots.txt: contains 2 entries which should be manually viewed.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://10.100.52.65:20930/robots.txt">http://10.100.52.65:20930/robots.txt</a><br>
+      <a href="http://10.100.52.65:20930/robots.txt">http://10.100.52.65:20930/robots.txt</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://developer.mozilla.org/en-US/docs/Glossary/Robots.txt'>https://developer.mozilla.org/en-US/docs/Glossary/Robots.txt</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/images</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/images: The web server may reveal its internal or real IP in the Location header via a request to with HTTP/1.0. The value is &quot;10.0.2.15&quot;.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://10.100.52.65:20930/images">http://10.100.52.65:20930/images</a><br>
+      <a href="http://10.100.52.65:20930/images">http://10.100.52.65:20930/images</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2000-0649'>CVE-2000-0649</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://10.100.52.65:20930/?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000">http://10.100.52.65:20930/?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000</a><br>
+      <a href="http://10.100.52.65:20930/?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000">http://10.100.52.65:20930/?=PHPB8B5F2A0-3C92-11d3-A3A9-4C7B08C10000</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://vulners.com/osvdb/OSVDB:12184'>OSVDB-12184</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/?=PHPE9568F36-D428-11d2-A769-00AA001ACF42</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/?=PHPE9568F36-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://10.100.52.65:20930/?=PHPE9568F36-D428-11d2-A769-00AA001ACF42">http://10.100.52.65:20930/?=PHPE9568F36-D428-11d2-A769-00AA001ACF42</a><br>
+      <a href="http://10.100.52.65:20930/?=PHPE9568F36-D428-11d2-A769-00AA001ACF42">http://10.100.52.65:20930/?=PHPE9568F36-D428-11d2-A769-00AA001ACF42</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://vulners.com/osvdb/OSVDB:12184'>OSVDB-12184</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/?=PHPE9568F34-D428-11d2-A769-00AA001ACF42</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/?=PHPE9568F34-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://10.100.52.65:20930/?=PHPE9568F34-D428-11d2-A769-00AA001ACF42">http://10.100.52.65:20930/?=PHPE9568F34-D428-11d2-A769-00AA001ACF42</a><br>
+      <a href="http://10.100.52.65:20930/?=PHPE9568F34-D428-11d2-A769-00AA001ACF42">http://10.100.52.65:20930/?=PHPE9568F34-D428-11d2-A769-00AA001ACF42</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://vulners.com/osvdb/OSVDB:12184'>OSVDB-12184</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/?=PHPE9568F35-D428-11d2-A769-00AA001ACF42</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/?=PHPE9568F35-D428-11d2-A769-00AA001ACF42: PHP reveals potentially sensitive information via certain HTTP requests that contain specific QUERY strings.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://10.100.52.65:20930/?=PHPE9568F35-D428-11d2-A769-00AA001ACF42">http://10.100.52.65:20930/?=PHPE9568F35-D428-11d2-A769-00AA001ACF42</a><br>
+      <a href="http://10.100.52.65:20930/?=PHPE9568F35-D428-11d2-A769-00AA001ACF42">http://10.100.52.65:20930/?=PHPE9568F35-D428-11d2-A769-00AA001ACF42</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td><a href='https://vulners.com/osvdb/OSVDB:12184'>OSVDB-12184</a></td>
+</table>
+
+<table class="dataTable">
+  <tr>
+    <td class="column-head">URI</td>
+    <td>/admin/</td>
+  </tr>
+  <tr>
+    <td class="column-head">HTTP Method</td>
+    <td>GET</td>
+  </tr>
+  <tr>
+    <td class="column-head">Description</td>
+    <td>/admin/: This might be interesting.</td>
+  </tr>
+  <tr>
+    <td class="column-head">Test Links</td>
+    <td>
+      <a href="http://10.100.52.65:20930/admin/">http://10.100.52.65:20930/admin/</a><br>
+      <a href="http://10.100.52.65:20930/admin/">http://10.100.52.65:20930/admin/</a>
+    </td>
+  </tr>
+  <tr>
+    <td class="column-head">References</td>
+    <td></td>
+</table>
+
+<div>
+<p></p>
+<table class="headerTable">
+ <tr>
+  <td>Host Summary</td>
+ </tr>
+</table>
+<table  class="dataTable">
+ <tr>
+  <td class="column-head">Start Time</td>
+  <td>1970-01-01 09:00:00</td>
+ </tr>
+ <tr>
+  <td class="column-head">End Time</td>
+  <td>2025-10-18 01:36:07</td>
+ </tr>
+ <tr>
+  <td class="column-head">Elapsed Time</td>
+  <td>1760718967 seconds</td>
+ </tr>
+ <tr>
+  <td class="column-head">Statistics</td>
+  <td>1729 requests,  errors,  findings</td>
+ </tr>
+</table>
+</div>
+<p></p>
+
+<p></p>
+<table class="headerTable">
+  <tr>
+    <td>Scan Summary</td>
+  </tr>
+</table>
+<table class="dataTable">
+  <tr>
+    <td class="column-head">Software Details</td>
+    <td><a href="http://cirt.net/">Nikto 2.5.0</a></td>
+  <tr>
+    <td class="column-head">CLI Options</td>
+    <td>-Display 1234EP -o report.html -Format htm -Tuning 123bde -host http://10.100.52.65:20930</td>
+  </tr>
+  <tr>
+    <td class="column-head">Hosts Tested</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td class="column-head">Start Time</td>
+    <td>Sat Oct 18 01:27:10 2025</td>
+  </tr>
+  <tr>
+    <td class="column-head">End Time</td>
+    <td>Thu Jan  1 09:00:00 1970</td>
+  </tr>
+  <tr>
+    <td class="column-head">Elapsed Time</td>
+    <td> seconds</td>
+  </tr>
+</table>
+<p></p>
+<p class="copyright">&copy; 2008 Chris Sullo</p>
+
+<!-- (c) 2008 Chris Sullo -->
+
+</body>
+</html>
+
