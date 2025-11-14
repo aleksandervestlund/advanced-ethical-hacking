@@ -8,6 +8,7 @@ from flag_07 import FLAG07
 
 # Went to http://10.100.52.65:20930/whatever/
 # Downloaded htpasswd
+# Went to: http://10.100.52.65:20930/admin/
 
 FLAG08 = "fea50f26be358bcc42d51daf1595394b"
 
