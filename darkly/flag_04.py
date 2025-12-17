@@ -2,6 +2,10 @@ from flag_03 import FLAG03
 from sympy.ntheory import discrete_log, nextprime
 
 
+# "Survey"
+# Inspect element
+# Modify the "value" of the "grade" input field to the correct value
+
 FLAG04 = "a35b30c09e3acd66f73e163e388791ff"
 
 
