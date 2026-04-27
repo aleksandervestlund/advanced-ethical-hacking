@@ -1,5 +1,5 @@
 bs4==0.0.2
-cryptography==46.0.7
+cryptography==47.0.0
 mpmath==1.4.1
 numpy==2.4.4
 pwntools==4.15.0
