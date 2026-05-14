@@ -3,5 +3,5 @@ cryptography==48.0.0
 mpmath==1.4.1
 numpy==2.4.4
 pwntools==4.15.0
-requests==2.33.1
+requests==2.34.1
 sympy==1.14.0
