@@ -1,7 +1,7 @@
 bs4==0.0.2
 cryptography==48.0.0
 mpmath==1.4.1
-numpy==2.4.4
+numpy==2.4.6
 pwntools==4.15.0
 requests==2.34.2
 sympy==1.14.0
