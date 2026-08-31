@@ -1,5 +1,5 @@
 -r base.txt
 
 black==26.5.1
-isort==8.0.1
+isort==9.0.1
 mypy==2.3.1
